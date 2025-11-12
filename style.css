@@ -152,3 +152,18 @@ body.light {
   --card-bg: #f2f2f2;
   --btn-bg: #007bff;
   }
+#btnTerbaru {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnTerbaru:hover {
+  background: #cc0000;
+  }
+    
