@@ -152,3 +152,9 @@ async function openChannel(channelId, channelTitle) {
     console.error(err);
   }
 }
+const btnTerbaru = document.getElementById("btnTerbaru");
+
+btnTerbaru.addEventListener("click", () => {
+  alert("Fitur 'Terbaru' belum aktif 🚧");
+});
+  
