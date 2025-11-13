@@ -153,8 +153,25 @@ async function openChannel(channelId, channelTitle) {
   }
 }
 const btnTerbaru = document.getElementById("btnTerbaru");
+let sortTerbaru = true;
 
+// aktifkan fungsi tombol terbaru
 btnTerbaru.addEventListener("click", () => {
-  alert("Fitur 'Terbaru' belum aktif 🚧");
+  sortTerbaru = !sortTerbaru;
+  btnTerbaru.textContent = sortTerbaru ? "Terbaru 🔄" : "Terlama ⬇️";
+
+  const container = document.getElementById("hasil") || document.getElementById("videoList");
+  if (!container) return;
+
+  // ambil semua video hasil pencarian
+  const videos = Array.from(container.querySelectorAll("iframe, .video-card, .video-item"));
+  if (videos.length === 0) return;
+
+  // urutkan elemen (terbaru duluan = di balik)
+  videos.reverse();
+
+  // hapus isi lama
+  container.innerHTML = "";
+  // tambahkan ulang sesuai urutan
+  videos.forEach(v => container.appendChild(v));
 });
-  
