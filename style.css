@@ -151,6 +151,7 @@ body.light {
   --text-color: #000000;
   --card-bg: #f2f2f2;
   --btn-bg: #007bff;
+  --mix-blend-mode: difference;
   }
 #btnTerbaru {
   background: #ff0000;
