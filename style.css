@@ -151,7 +151,6 @@ body.light {
   --text-color: #000000;
   --card-bg: #f2f2f2;
   --btn-bg: #007bff;
-  --mix-blend-mode: difference;
   }
 #btnTerbaru {
   background: #ff0000;
@@ -178,4 +177,8 @@ header {
   flex-wrap: wrap;
   background: #202020;
   padding: 10px 15px;
+}
+.text {
+  color: white;
+  mix-blend-mode: difference;
 }
