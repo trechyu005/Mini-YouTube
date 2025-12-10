@@ -179,6 +179,6 @@ header {
   padding: 10px 15px;
 }
 .text {
-  color: Red;
+  color: red;
   mix-blend-mode: difference;
 }
