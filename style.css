@@ -182,3 +182,7 @@ header {
   color: white;
   mix-blend-mode: difference;
 }
+.body {
+  background-color: red
+  text-align: center;
+}
