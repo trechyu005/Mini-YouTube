@@ -179,10 +179,6 @@ header {
   padding: 10px 15px;
 }
 .text {
-  color: white;
+  color: Red;
   mix-blend-mode: difference;
-}
-.body {
-  background-color: red
-  text-align: center;
 }
